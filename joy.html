@@ -27,44 +27,8 @@
 	<head>
 		<title>Joy</title>
 		<meta charset="utf-8">
-		<meta name="description" content="Example page of use pure Javascript JoyStick">
-		<meta name="author" content="Roberto D'Amico">
-		<link rel="shortcut icon" type="image/png" href="http://bobboteck.github.io/img/roberto-damico-bobboteck.png">
-		<style>
-*
-{
-	box-sizing: border-box;
-}
-body
-{
-	margin: 0px;
-	padding: 0px;
-	font-family: monospace;
-}
-.row
-{
-	display: inline-flex;
-	clear: both;
-}
-.columnLateral
-{
-  float: left;
-  width: 15%;
-  min-width: 300px;
-}
-.columnCetral
-{
-  float: left;
-  width: 70%;
-  min-width: 300px;
-}
-#joy2Div
-{
-	width:200px;
-	height:200px;
-	margin:50px
-}
 
+		<style>
 		</style>
 		<script src="joy.js"></script>
 	</head>
@@ -75,14 +39,8 @@ body
 		<!-- Example of two JoyStick integrated in the page structure -->
 		<script type="text/javascript">
 
-      var joy3Param = { "title": "joystick3" };
+      var joy3Param = { "title": "joystick3", "internalFillColor": "lightgray" , "externalStrokeColor": "black"};
       var Joy3 = new JoyStick('joy3Div', joy3Param);
-
-      var joy3IinputPosX = document.getElementById("joy3PosizioneX");
-      var joy3InputPosY = document.getElementById("joy3PosizioneY");
-      var joy3Direzione = document.getElementById("joy3Direzione");
-      var joy3X = document.getElementById("joy3X");
-      var joy3Y = document.getElementById("joy3Y");
 
 		</script>
 	</body>
